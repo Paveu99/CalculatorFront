@@ -1,15 +1,26 @@
 import React from 'react';
-import {Test} from "types"
 import './App.css';
+import {Route, Routes} from "react-router-dom";
+import {Header} from './components/Header/Header';
+import {NotFoundView} from './views/NotFoundView';
+import {MathHistoryView} from "./views/MathHistoryView";
+import {CreateFormView} from './views/CreateFormView';
+import {MainPageView} from "./views/MainPageView";
+import './components/styles/Styles.css'
 
-function App() {
-  const foobar: Test = {
-    x: 24
-  }
-
-  return <>
-    <h1>{foobar.x}</h1>
-  </>
+export const App = () => {
+    return (
+        <div className="App">
+            <div className="theWholeThing">
+                <Header/>
+                <Routes>
+                    <Route path="/" element={<MainPageView/>}/>
+                    <Route path="/mathHis" element={<MathHistoryView/>}/>
+                    <Route path="/math/create" element={<CreateFormView/>}/>
+                    <Route path="*" element={<NotFoundView/>}/>
+                </Routes>
+            </div>
+        </div>
+    );
 }
 
-export default App;
