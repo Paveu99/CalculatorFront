@@ -1,0 +1,10 @@
+.formik {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+input {
+    width: 80%;
+    border-radius: 10px;
+}
