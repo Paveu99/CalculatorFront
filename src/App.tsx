@@ -7,6 +7,7 @@ import {MathHistoryView} from "./views/MathHistoryView";
 import {CreateFormView} from './views/CreateFormView';
 import {MainPageView} from "./views/MainPageView";
 import './components/styles/Styles.css'
+import {InstructionView} from "./views/InstructionView";
 
 export const App = () => {
     return (
@@ -15,6 +16,7 @@ export const App = () => {
                 <Header/>
                 <Routes>
                     <Route path="/" element={<MainPageView/>}/>
+                    <Route path="/mathIns" element={<InstructionView/>}/>
                     <Route path="/mathHis" element={<MathHistoryView/>}/>
                     <Route path="/math/create" element={<CreateFormView/>}/>
                     <Route path="*" element={<NotFoundView/>}/>

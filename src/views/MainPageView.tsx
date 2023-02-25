@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import '../components/styles/Main.css'
+import {NavLink} from "react-router-dom";
 
 interface Joke {
     question: string,
@@ -210,7 +211,8 @@ export const MainPageView = () => {
                     </li>
                 </ul>
             </p>
-            <p>If you have any question how to interact with app click on 'Instruction' tab to see more</p>
+            <p>If you have any question how to interact with app click on <NavLink
+                to="/mathIns">"Instruction"</NavLink> tab to see more</p>
             <br/>
             <hr/>
             <p className='joke'>

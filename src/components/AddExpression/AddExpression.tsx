@@ -11,7 +11,8 @@ export const AddExpression = () => {
         secondNum: 0,
         solution: null,
     })
-    const [warning, setWarning] = useState<boolean>(false)
+    const [warningOp, setWarningOp] = useState<boolean>(false);
+    const [warningNum0, setWarningNum0] = useState<boolean>(false);
     const [loading, setLoading] = useState<boolean>(false);
     const [resultInfo, setResultInfo] = useState<string | null>(null);
 
@@ -23,7 +24,8 @@ export const AddExpression = () => {
     };
 
     const checkTheResult = () => {
-        setWarning(false)
+        setWarningOp(false);
+        setWarningNum0(false);
         if (form.operator) {
             switch (form.operator) {
                 case '+':
@@ -43,7 +45,7 @@ export const AddExpression = () => {
                     }));
                 case '/':
                     if (Number(form.secondNum) === 0) {
-                        setWarning(true)
+                        setWarningNum0(true)
                         return
                     }
                     return setForm(form => ({
@@ -55,7 +57,7 @@ export const AddExpression = () => {
                     return 'Error';
             }
         } else {
-            console.log('hahaha')
+            setWarningOp(true);
         }
     }
 
@@ -80,7 +82,8 @@ export const AddExpression = () => {
     }
 
     const addAnotherOneFromScratch = () => {
-        setWarning(false)
+        setWarningOp(false);
+        setWarningNum0(false);
         setResultInfo(null);
         setForm({
             firstNum: 0,
@@ -92,7 +95,8 @@ export const AddExpression = () => {
 
     if (loading) return <Spinner/>
 
-    const war = <p>You cannot do that</p>
+    const war = <p style={{color: "red"}}><em>📣 You must at least choose an operator 📣</em></p>
+    const warNum0 = <p style={{color: "red"}}><em>📣 You cannot divide by 0 try again 📣</em></p>
 
 
     if (resultInfo !== null) {
@@ -140,7 +144,8 @@ export const AddExpression = () => {
                         />
                     </label>
                 </p>
-                {warning && war}
+                {warningOp && war}
+                {warningNum0 && warNum0}
                 <p>
                     <button className='submitbutton' type="button" onClick={checkTheResult}>Check the answer</button>
                     | <button className='submitbutton' onClick={addAnotherOneFromScratch}>Reset</button>
