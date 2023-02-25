@@ -92,7 +92,7 @@ export const AddExpression = () => {
 
     if (loading) return <Spinner/>
 
-    const war = <p>Nie wolno tak robić</p>
+    const war = <p>You cannot do that</p>
 
 
     if (resultInfo !== null) {
@@ -145,7 +145,7 @@ export const AddExpression = () => {
                     <button className='submitbutton' type="button" onClick={checkTheResult}>Check the answer</button>
                     | <button className='submitbutton' onClick={addAnotherOneFromScratch}>Reset</button>
                 </p>
-                <p>{form.solution}</p>
+                <h3>{form.solution}</h3>
                 <button className='submitbutton' type="submit">Add to the list</button>
             </form>
         </>

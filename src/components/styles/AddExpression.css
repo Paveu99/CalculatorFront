@@ -7,4 +7,28 @@
 input {
     width: 80%;
     border-radius: 10px;
+    height: 35px;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+option {
+    height: 30px;
+}
+
+select {
+    height: 30px;
+    margin-top: 5px;
+}
+
+h2 {
+    margin: 10px 0 10px 0;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    margin: 5px;
 }
