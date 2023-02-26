@@ -121,7 +121,7 @@ export const AddExpression = () => {
                 </p>
                 <p>
                     <label>
-                        Operator: <br/>
+                        Operator:<br/>
                         <select
                             value={form.operator}
                             onChange={e => updateForm('operator', e.target.value)}
