@@ -1,0 +1,18 @@
+img {
+    border: black solid 2px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.main1 {
+    width: 43%;
+}
+
+.mainpage {
+    width: 75%;
+}
+
+.history {
+    width: 75%;
+}
