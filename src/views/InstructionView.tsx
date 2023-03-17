@@ -30,12 +30,10 @@ export const InstructionView = () => {
             </li>
         </ol>
         <h3>Add New Expression</h3>
-        <p>It is a place where you can see your past math expressions. You can see its id first, second number, operator
-            and solution. If you feel embarrassed by what you calculated your can delete unwanted expression by clicking
-            on garbage can!</p>
+        <p>It is a place where you can calculate expressions and later on you can add them to the history tab.</p>
         <ol>
             <li>
-                <img className='history' src={require("./4.png")} alt='Explanation'/>
+                <img className='addexpression' src={require("./AddExpression.png")} alt='Explanation'/>
             </li>
         </ol>
     </>
