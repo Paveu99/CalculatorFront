@@ -1,0 +1,23 @@
+img {
+    border: black solid 4px;
+    border-radius: 12px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.main1 {
+    width: 43%;
+}
+
+.mainpage {
+    width: 75%;
+}
+
+.history {
+    width: 75%;
+}
+
+.addexpression {
+    width: 75%;
+    object-fit: cover;
+}

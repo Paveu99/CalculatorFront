@@ -11,9 +11,10 @@ export const Header = () => {
         <div className='header'>
             <h1>Math website</h1>
             <div>
-                Menu: <NavLink style={colorOfLink} to="/">Main page</NavLink> | <NavLink style={colorOfLink}
-                                                                                         to="/mathHis">Expression
-                history</NavLink> | <NavLink style={colorOfLink} to="/math/create">Add new expression</NavLink>
+                <NavLink className='link1' style={colorOfLink} to="/">Main page </NavLink>
+                | <NavLink className='link2' style={colorOfLink} to="/mathIns">Instruction </NavLink>
+                | <NavLink className='link3' style={colorOfLink} to="/mathHis">Expression history </NavLink>
+                | <NavLink className='link4' style={colorOfLink} to="/math/create">Add new expression</NavLink>
                 <hr/>
             </div>
         </div>
