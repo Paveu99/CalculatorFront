@@ -193,8 +193,8 @@ export const MainPageView = () => {
     </>
     return (
         <div className='main'>
-            <h1 style={{textAlign: 'center'}}>Welcome to this website where you will be able to solve simple
-                equations</h1>
+            <h2 style={{textAlign: 'center'}}>Welcome to this website where you will be able to solve simple
+                equations</h2>
             <p>This webpage provides you with opportunity to:
                 <ul>
                     <li>
@@ -213,7 +213,6 @@ export const MainPageView = () => {
             </p>
             <p>If you have any question how to interact with app click on <NavLink
                 to="/mathIns">"Instruction"</NavLink> tab to see more</p>
-            <br/>
             <hr/>
             <p className='joke'>
                 <h2>MATH JOKES</h2>

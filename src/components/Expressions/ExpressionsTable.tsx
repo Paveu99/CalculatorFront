@@ -9,25 +9,27 @@ interface Props {
 }
 
 export const ExpressionsTable = (props: Props) => (
-    <table>
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>First Number</th>
-            <th>Operator</th>
-            <th>Second Number</th>
-            <th>Solution</th>
-            <th>Date</th>
-            <th>Delete</th>
-        </tr>
-        </thead>
-        <tbody>
-        {
-            props.expressions
-                .map(el => (
-                    <ExpressionsRow expression={el} key={el.id} refresh={props.refresh}/>
-                ))
-        }
-        </tbody>
-    </table>
+    <>
+        <table>
+            <thead>
+            <tr className="headers">
+                <th>ID</th>
+                <th>First Number</th>
+                <th>Operator</th>
+                <th>Second Number</th>
+                <th>Solution</th>
+                <th>Date</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            {
+                props.expressions
+                    .map(el => (
+                        <ExpressionsRow expression={el} key={el.id} refresh={props.refresh}/>
+                    ))
+            }
+            </tbody>
+        </table>
+    </>
 )
