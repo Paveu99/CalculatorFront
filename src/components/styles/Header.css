@@ -3,6 +3,12 @@
     flex-direction: column;
 }
 
+.subdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .link1 {
     border-radius: 5px;
     margin: 2px;

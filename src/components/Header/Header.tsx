@@ -9,7 +9,11 @@ export const Header = () => {
 
     return (
         <div className='header'>
+            {/*<div className='subdiv'>*/}
             <h1>Math website</h1>
+            {/*<div style={{fontWeight: "bold", margin: "15px"}}>Login</div>*/}
+            {/*<NavLink style={colorOfLink} to="/">Login</NavLink>*/}
+            {/*</div>*/}
             <div>
                 <NavLink className='link1' style={colorOfLink} to="/">Main page </NavLink>
                 | <NavLink className='link2' style={colorOfLink} to="/mathIns">Instruction </NavLink>

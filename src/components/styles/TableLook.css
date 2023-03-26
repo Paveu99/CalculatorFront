@@ -3,3 +3,11 @@ table, th, td {
     text-align: center;
     background-color: white;
 }
+
+.headers {
+    height: 50px;
+}
+
+tr {
+    height: 70px;
+}
