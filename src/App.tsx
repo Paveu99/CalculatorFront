@@ -8,8 +8,13 @@ import {CreateFormView} from './views/CreateFormView';
 import {MainPageView} from "./views/MainPageView";
 import './components/styles/Styles.css'
 import {InstructionView} from "./views/InstructionView";
+import {LogForm} from "./components/LogRegForms/LoginForm";
+import {LogOutForm} from "./components/Header/LogOutForm";
 
 export const App = () => {
+    const refreshMath = () => {
+        window.location.replace("http://localhost:3000");
+    }
     return (
         <div className="App">
             <div className="theWholeThing">
@@ -19,6 +24,8 @@ export const App = () => {
                     <Route path="/mathIns" element={<InstructionView/>}/>
                     <Route path="/mathHis" element={<MathHistoryView/>}/>
                     <Route path="/math/create" element={<CreateFormView/>}/>
+                    <Route path="/user" element={<LogForm refresh={refreshMath}/>}/>
+                    <Route path="/logout" element={<LogOutForm/>}/>
                     <Route path="*" element={<NotFoundView/>}/>
                 </Routes>
             </div>

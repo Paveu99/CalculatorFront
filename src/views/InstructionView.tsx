@@ -5,6 +5,17 @@ export const InstructionView = () => {
     return <>
         <h2>Instruction</h2>
         <p>In this tab you can see answers to some questions bugging you about functionality of this app.</p>
+        <h3>Login and logout</h3>
+        <p>
+            If you want to start creating a math expression you have to login first!
+        </p>
+        <p>
+            Click on "Login" tab in upper right corner to login or register. By doing so you will have access to
+            Expression History and Add new Expression tabs.
+        </p>
+        <p>
+            If you want to logout click on logout in right upper corner and confirm your choice.
+        </p>
         <h3>Main Page</h3>
         <p>Apart from information about what the app actually does you can read a math joke right at the bottom! By
             clicking "Click me to see a random joke!" you will see a question, then after clicking "See the answer" you

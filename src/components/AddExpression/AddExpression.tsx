@@ -10,6 +10,7 @@ export const AddExpression = () => {
         operator: '',
         secondNum: 0,
         solution: null,
+        userId: localStorage.getItem('token2') as string
     })
     const [warningOp, setWarningOp] = useState<boolean>(false);
     const [warningNum0, setWarningNum0] = useState<boolean>(false);
@@ -90,6 +91,7 @@ export const AddExpression = () => {
             operator: '',
             secondNum: 0,
             solution: null,
+            userId: localStorage.getItem('token2') as string
         })
     }
 

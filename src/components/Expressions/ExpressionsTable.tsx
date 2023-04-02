@@ -2,18 +2,19 @@ import React from "react";
 import {MathEntity} from "types";
 import {ExpressionsRow} from "./ExpressionsRow";
 import '../styles/TableLook.css'
+import {NavLink} from "react-router-dom";
 
 interface Props {
     expressions: MathEntity[],
     refresh: () => void
 }
 
-export const ExpressionsTable = (props: Props) => (
-    <>
-        <table>
+export const ExpressionsTable = (props: Props) => {
+
+    const response = <>
+        <table className='tabel'>
             <thead>
             <tr className="headers">
-                <th>ID</th>
                 <th>First Number</th>
                 <th>Operator</th>
                 <th>Second Number</th>
@@ -32,4 +33,8 @@ export const ExpressionsTable = (props: Props) => (
             </tbody>
         </table>
     </>
-)
+    return (
+        props.expressions.length !== 0 ? response : <b>History is empty go to <NavLink
+            to="/math/create">"Add expression"</NavLink> Tab to add new expressions</b>
+    )
+}
