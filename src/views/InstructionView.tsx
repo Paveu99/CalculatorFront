@@ -46,6 +46,9 @@ export const InstructionView = () => {
             <li>
                 <img className='addexpression' src={require("./AddExpression.png")} alt='Explanation'/>
             </li>
+            <li>
+                <img className='addexpression' src={require("./AddExpressionv2.png")} alt='Explanation'/>
+            </li>
         </ol>
     </>
 }
