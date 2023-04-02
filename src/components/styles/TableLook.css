@@ -1,4 +1,9 @@
-table, th, td {
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
     border: 1px solid;
     text-align: center;
     background-color: white;
@@ -10,4 +15,9 @@ table, th, td {
 
 tr {
     height: 70px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
 }

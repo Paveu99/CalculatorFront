@@ -27,9 +27,9 @@ export const ExpressionsRow = (props: Props) => {
         props.refresh()
     }
 
+
     return (
         <tr>
-            <td>{props.expression.id}</td>
             <td>{props.expression.firstNum}</td>
             <td>{props.expression.operator}</td>
             <td>{props.expression.secondNum}</td>
