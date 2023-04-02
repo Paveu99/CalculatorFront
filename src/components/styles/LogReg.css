@@ -1,0 +1,42 @@
+.wholeThing {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+input {
+    width: 80%;
+    padding: 20px 20px 20px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.guidePanel {
+    display: flex;
+    justify-content: center;
+}
+
+.RegBttn {
+    margin: 0 5px 5px 5px;
+}
+
+.LoginBttn {
+    margin: 0 5px 5px 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    width: 100%;
+}
+
+em {
+    margin: 0 0 15px 15px;
+}
