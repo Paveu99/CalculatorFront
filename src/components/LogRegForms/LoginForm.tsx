@@ -41,7 +41,6 @@ export const LogForm = (props: Props) => {
         console.log(form)
         if (form.email.includes('@') && form.password.length > 0) {
             try {
-                //tu powinno odbywać się hashowanie hasła i emaila
                 const res = await fetch(`http://localhost:3001/user/login`, {
                     method: 'POST',
                     headers: {
