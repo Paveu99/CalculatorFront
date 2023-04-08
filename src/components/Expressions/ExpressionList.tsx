@@ -14,12 +14,9 @@ export const ExpressionList = () => {
         setMathList(null)
         const res = await fetch('http://localhost:3001/math');
         const data = await res.json();
-        console.log(data.mathHistory)
-        console.log(localStorage.getItem('token2'))
         setMathList(data.mathHistory.filter(function (el: MathEntity) {
             return el.userId === localStorage.getItem('token2')
         }))
-        console.log(mathList)
     };
 
     useEffect(() => {

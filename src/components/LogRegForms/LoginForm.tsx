@@ -38,7 +38,6 @@ export const LogForm = (props: Props) => {
 
     const checkInput = async (e: FormEvent) => {
         e.preventDefault()
-        console.log(form)
         if (form.email.includes('@') && form.password.length > 0) {
             try {
                 const res = await fetch(`http://localhost:3001/user/login`, {
@@ -51,7 +50,6 @@ export const LogForm = (props: Props) => {
                 const data: UserEntity = await res.json();
                 localStorage.setItem('token', data.name)
                 localStorage.setItem('token2', data.id as string)
-                console.log(localStorage.getItem('token'))
                 if (data) {
                     setCorrect(true)
                     props.refresh()

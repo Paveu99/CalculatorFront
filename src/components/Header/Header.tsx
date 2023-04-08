@@ -6,7 +6,6 @@ import {LocalView} from "./LocalView";
 export const Header = () => {
 
     const [test, setTest] = useState<boolean>(false);
-    const [logged, setLogged] = useState<boolean>(false)
     const colorOfLink = ({isActive}: {
         isActive: boolean
     }) => ({color: isActive ? 'green' : 'red'})
@@ -28,7 +27,6 @@ export const Header = () => {
         <div className='header'>
             <div className='subdiv'>
                 <h1>Math website</h1>
-                {/*<div style={{fontWeight: "bold", margin: "15px"}}>Login</div>*/}
                 {test ? user : login}
             </div>
             <div>

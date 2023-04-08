@@ -45,7 +45,6 @@ export const RegForm = () => {
 
     const checkInput = async (e: FormEvent) => {
         e.preventDefault()
-        console.log(form)
         setSubmitted(true)
         if (form.email.includes('@') && form.password.length >= 8 && form.name.length >= 3 && form.surname.length >= 3) {
             setCorrect(true)
@@ -57,8 +56,7 @@ export const RegForm = () => {
                     },
                     body: JSON.stringify(form),
                 })
-                const data: UserEntity = await res.json() // ZBIERAMY ODPOWIEDŹ OD BE
-                console.log(data)
+                const data: UserEntity = await res.json()
                 setResultInfo(`User ${data.name} ${data.surname} was added to the list now try to log in`)
             } finally {
                 setLoading(false);

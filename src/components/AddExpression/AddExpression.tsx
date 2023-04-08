@@ -54,7 +54,6 @@ export const AddExpression = () => {
                         solution: Number(form.firstNum) / Number(form.secondNum)
                     }));
                 default:
-                    console.log('Eeeee')
                     return 'Error';
             }
         } else {
@@ -74,8 +73,7 @@ export const AddExpression = () => {
                 },
                 body: JSON.stringify(form),
             })
-            const data: MathEntity = await res.json() // ZBIERAMY ODPOWIEDŹ OD BE
-            console.log(data)
+            const data: MathEntity = await res.json()
             setResultInfo(`Expression ${data.firstNum} ${data.operator} ${data.secondNum} = ${data.solution} with id: ${data.id} was added to the list`)
         } finally {
             setLoading(false);
