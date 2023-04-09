@@ -12,11 +12,10 @@ Here you can have a look at back-end side: https://github.com/Paveu99/project-ba
 - Demo
 - Technologies
 ## Demo
-Here is a link to watch it work: https://youtu.be/fuv1B6gRkXA
+Here is a link to watch it work: https://youtu.be/aLytW78FJ_c
 ## Tech Stack
 Client side was created with:
 - typescript: 4.9.5,
 - react: 18.2.0,
 - react-router-dom: 6.3.0,
 - react-bootstrap: 2.7.2,
-
